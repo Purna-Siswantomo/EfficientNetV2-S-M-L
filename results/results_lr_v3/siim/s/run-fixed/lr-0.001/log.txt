@@ -1,0 +1,10 @@
+[codecarbon WARNING @ 15:31:11] Multiple instances of codecarbon are allowed to run at the same time.
+[siim/s/fixed/s1/384] ep 0 loss 0.6851 val_f1 0.6445 pred_classes 2/2 bad_loss 0.00 (87s)
+[siim/s/fixed/s1/384] ep 1 loss 0.7111 val_f1 0.3230 pred_classes 1/2 bad_loss 0.00 (63s)
+[siim/s/fixed/s1/384] ep 2 loss 0.6932 val_f1 0.3230 pred_classes 1/2 bad_loss 0.00 (63s)
+[siim/s/fixed/s1/384] ep 3 loss 0.6932 val_f1 0.3230 pred_classes 1/2 bad_loss 0.00 (63s)
+[siim/s/fixed/s1/384] ep 4 loss 0.6932 val_f1 0.3230 pred_classes 1/2 bad_loss 0.00 (63s)
+[siim/s/fixed/s1/384] ep 5 loss 0.6932 val_f1 0.3230 pred_classes 1/2 bad_loss 0.00 (62s)
+[siim/s/fixed/s1/384] ep 6 loss 0.6932 val_f1 0.3230 pred_classes 1/2 bad_loss 0.00 (62s)
+[siim/s/fixed/s1/384] ep 7 loss 0.6932 val_f1 0.3230 pred_classes 1/2 bad_loss 0.00 (63s)
+{"test_macro_f1": 0.6190337565919128, "test_auroc": 0.7019706464379947, "train_img_per_sec": 58.0601041839065}

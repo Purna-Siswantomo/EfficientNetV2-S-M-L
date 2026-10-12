@@ -1,0 +1,6 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[codecarbon WARNING @ 06:15:21] Multiple instances of codecarbon are allowed to run at the same time.
+[ham10000/l/fixed/s1/384] ep 0 loss 1.9733 val_f1 0.1150 pred_classes 1/7 bad_loss 0.01 (369s)
+[ham10000/l/fixed/s1/384] ep 1 loss 1.9059 val_f1 0.0358 pred_classes 0/7 bad_loss 0.91 (126s)
+DIVERGED at epoch 1 (non-finite loss fraction 0.91, finite weights True); try a lower --lr or --no_amp
+{"test_macro_f1": 0.11523217982845312, "test_auroc": 0.473590927692209, "train_img_per_sec": 28.86068291398286}

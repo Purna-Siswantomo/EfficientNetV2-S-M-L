@@ -1,0 +1,80 @@
+[
+  {
+    "variant": "s",
+    "img_size": 384,
+    "params_m": 20.18005,
+    "gmacs": 8.364339712,
+    "cpu_latency_ms": 199.42359409999995,
+    "gpu_latency_ms": 17.18892593000021,
+    "gpu_throughput_img_s": 314.09091228817204,
+    "gpu_infer_mem_gb_b32": 0.5204687118530273,
+    "train_img_s_b8": 75.59308120415149,
+    "train_mem_gb_b8": 1.9140362739562988,
+    "gpu_name": "Tesla T4"
+  },
+  {
+    "variant": "m",
+    "img_size": 384,
+    "params_m": 52.860918,
+    "gmacs": 15.73549824,
+    "cpu_latency_ms": 348.9298849000022,
+    "gpu_latency_ms": 24.81815212000015,
+    "gpu_throughput_img_s": 179.9161149547613,
+    "gpu_infer_mem_gb_b32": 0.7302861213684082,
+    "train_img_s_b8": 43.37954958463337,
+    "train_mem_gb_b8": 3.184523105621338,
+    "gpu_name": "Tesla T4"
+  },
+  {
+    "variant": "l",
+    "img_size": 384,
+    "params_m": 117.236834,
+    "gmacs": 35.898141184,
+    "cpu_latency_ms": 629.8341090000008,
+    "gpu_latency_ms": 33.56672843500007,
+    "gpu_throughput_img_s": 98.58269936948979,
+    "gpu_infer_mem_gb_b32": 1.208420753479004,
+    "train_img_s_b8": 22.163155185025424,
+    "train_mem_gb_b8": 5.631443023681641,
+    "gpu_name": "Tesla T4"
+  },
+  {
+    "variant": "s",
+    "img_size": 480,
+    "params_m": 20.18005,
+    "gmacs": 13.067217856,
+    "cpu_latency_ms": 271.04703924999853,
+    "gpu_latency_ms": 17.22386768999968,
+    "gpu_throughput_img_s": 154.8814949409691,
+    "gpu_infer_mem_gb_b32": 0.7666463851928711,
+    "train_img_s_b8": 42.81558086678685,
+    "train_mem_gb_b8": 2.939059257507324,
+    "gpu_name": "Tesla T4"
+  },
+  {
+    "variant": "m",
+    "img_size": 480,
+    "params_m": 52.860918,
+    "gmacs": 24.581182944,
+    "cpu_latency_ms": 507.7176595000026,
+    "gpu_latency_ms": 24.965528445000018,
+    "gpu_throughput_img_s": 91.61345850359791,
+    "gpu_infer_mem_gb_b32": 0.961249828338623,
+    "train_img_s_b8": 25.89915605882511,
+    "train_mem_gb_b8": 4.781793117523193,
+    "gpu_name": "Tesla T4"
+  },
+  {
+    "variant": "l",
+    "img_size": 480,
+    "params_m": 117.236834,
+    "gmacs": 56.078421568,
+    "cpu_latency_ms": 915.719197300001,
+    "gpu_latency_ms": 33.85732164999979,
+    "gpu_throughput_img_s": 53.07757222520083,
+    "gpu_infer_mem_gb_b32": 1.5103254318237305,
+    "train_img_s_b8": 15.045513967553944,
+    "train_mem_gb_b8": 8.41102647781372,
+    "gpu_name": "Tesla T4"
+  }
+]

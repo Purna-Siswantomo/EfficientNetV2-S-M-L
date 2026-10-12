@@ -1,0 +1,10 @@
+tag,dataset,contrast,gradcam_localisation,lesion_reliance,gradcam_deletion,ig_localisation,gradcam_vs_ig_dod,reading
+main,busi,M-S,equivalent,higher,equivalent,equivalent,higher,"Larger model is not more explainable (2.2, row 3)"
+main,busi,L-S,lower,higher,lower,lower,equivalent,Not conclusive under the pre-specified rules
+main,busi,L-M,lower,higher,lower,equivalent,equivalent,Not conclusive under the pre-specified rules
+main,ham10000,M-S,higher,equivalent,higher,higher,lower,"Scaling improves localisation under a locked recipe (2.2, row 4)"
+main,ham10000,L-S,lower,equivalent,higher,higher,lower,"Method-dependent: Grad-CAM penalises the larger model, the model's lesion reliance does not change (2.2, RQ6 row)"
+main,ham10000,L-M,lower,equivalent,lower,higher,lower,"Method-dependent: Grad-CAM penalises the larger model, the model's lesion reliance does not change (2.2, RQ6 row)"
+main,siim,M-S,lower,higher,inconclusive,lower,higher,Not conclusive under the pre-specified rules
+main,siim,L-S,lower,equivalent,higher,lower,higher,Not conclusive under the pre-specified rules
+main,siim,L-M,higher,lower,inconclusive,higher,equivalent,"Scaling improves localisation under a locked recipe (2.2, row 4)"

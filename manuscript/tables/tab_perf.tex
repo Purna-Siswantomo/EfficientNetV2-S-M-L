@@ -1,0 +1,24 @@
+\begin{table}[!htbp]
+\centering
+\caption{Classification performance on the test data (mean and standard deviation over five folds for BUSI and five seeds for HAM10000 and SIIM-ACR) and the paired-bootstrap difference in macro-F1 against S. $^{\mathrm{e}}$: equivalent within $\pm0.03$ (90\% CI inside the margin). $p_\mathrm{Holm}$: Holm-adjusted $p$ within the primary performance family.}
+\label{tab:perf}
+\small
+\setlength{\tabcolsep}{4pt}
+\fitwidth{\begin{tabular}{llcccll}
+\toprule
+Dataset & Model & Macro-F1 & Balanced acc. & AUROC & $\Delta$ macro-F1 vs S [95\% CI] & $p_\mathrm{Holm}$ \\
+\midrule
+BUSI & S & 0.808 (0.047) & 0.808 (0.062) & 0.944 (0.015) & -- & -- \\
+ & M & 0.838 (0.041) & 0.829 (0.038) & 0.952 (0.024) & +0.029 [$-$0.019, 0.077] & 1.00 \\
+ & L & 0.809 (0.050) & 0.830 (0.052) & 0.944 (0.011) & +0.002 [$-$0.036, 0.042] & 1.00 \\
+\midrule
+HAM10000 & S & 0.715 (0.028) & 0.699 (0.031) & 0.955 (0.002) & -- & -- \\
+ & M & 0.723 (0.013) & 0.695 (0.021) & 0.966 (0.003) & +0.008 [$-$0.020, 0.036] & 1.00 \\
+ & L & 0.722 (0.027) & 0.713 (0.023) & 0.963 (0.004) & +0.007 [$-$0.029, 0.040] & 1.00 \\
+\midrule
+SIIM-ACR & S & 0.842 (0.006) & 0.843 (0.006) & 0.916 (0.008) & -- & -- \\
+ & M & 0.847 (0.007) & 0.847 (0.007) & 0.919 (0.008) & +0.005 [$-$0.007, 0.016]$^{\mathrm{e}}$ & 1.00 \\
+ & L & 0.835 (0.007) & 0.835 (0.007) & 0.914 (0.007) & $-$0.007 [$-$0.017, 0.003]$^{\mathrm{e}}$ & 1.00 \\
+\bottomrule
+\end{tabular}}
+\end{table}

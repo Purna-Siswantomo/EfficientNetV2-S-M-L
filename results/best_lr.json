@@ -1,0 +1,23 @@
+{
+  "busi/l/0": 3e-05,
+  "busi/l/1": 0.0001,
+  "busi/l/2": 3e-05,
+  "busi/l/3": 3e-05,
+  "busi/l/4": 0.0001,
+  "busi/m/0": 0.0001,
+  "busi/m/1": 0.0001,
+  "busi/m/2": 3e-05,
+  "busi/m/3": 3e-05,
+  "busi/m/4": 0.0001,
+  "busi/s/0": 0.0003,
+  "busi/s/1": 0.0003,
+  "busi/s/2": 0.0003,
+  "busi/s/3": 0.0001,
+  "busi/s/4": 0.0003,
+  "ham10000/l/fixed": 0.0001,
+  "ham10000/m/fixed": 0.0001,
+  "ham10000/s/fixed": 3e-05,
+  "siim/l/fixed": 0.0001,
+  "siim/m/fixed": 0.0001,
+  "siim/s/fixed": 0.0003
+}

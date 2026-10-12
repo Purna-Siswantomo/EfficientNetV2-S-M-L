@@ -1,0 +1,23 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[codecarbon WARNING @ 00:58:00] Multiple instances of codecarbon are allowed to run at the same time.
+[busi/l/3/s3/384] ep 0 loss 1.0986 val_f1 0.6598 pred_classes 3/3 bad_loss 0.00 (38s)
+[busi/l/3/s3/384] ep 1 loss 1.0982 val_f1 0.6837 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 2 loss 1.0964 val_f1 0.6851 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 3 loss 1.0899 val_f1 0.7550 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 4 loss 1.0662 val_f1 0.8295 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 5 loss 0.9529 val_f1 0.7754 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 6 loss 0.6720 val_f1 0.7417 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 7 loss 0.5335 val_f1 0.8743 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 8 loss 0.6037 val_f1 0.8558 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 9 loss 0.3021 val_f1 0.9062 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 10 loss 0.2396 val_f1 0.8916 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 11 loss 0.1610 val_f1 0.9119 pred_classes 3/3 bad_loss 0.00 (15s)
+[busi/l/3/s3/384] ep 12 loss 0.1248 val_f1 0.9222 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 13 loss 0.1226 val_f1 0.8548 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 14 loss 0.1385 val_f1 0.7948 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 15 loss 0.1398 val_f1 0.9078 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 16 loss 0.0509 val_f1 0.7750 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 17 loss 0.1832 val_f1 0.8746 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 18 loss 0.0675 val_f1 0.9070 pred_classes 3/3 bad_loss 0.00 (14s)
+[busi/l/3/s3/384] ep 19 loss 0.0075 val_f1 0.8743 pred_classes 3/3 bad_loss 0.00 (14s)
+{"test_macro_f1": 0.7864357864357864, "test_auroc": 0.941402778931383, "train_img_per_sec": 18.889980849570325}

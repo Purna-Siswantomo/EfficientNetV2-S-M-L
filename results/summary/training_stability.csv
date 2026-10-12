@@ -1,0 +1,10 @@
+tag,dataset,variant,runs,ok,ok_first_try,rescued,failed_final,failed_attempts,max_skipped_batch_frac
+main,busi,l,5,5,5,0,0,0,0.0
+main,busi,m,5,5,5,0,0,0,0.0
+main,busi,s,5,5,5,0,0,0,0.0
+main,ham10000,l,5,5,5,0,0,0,0.0
+main,ham10000,m,5,5,5,0,0,0,0.0
+main,ham10000,s,5,5,5,0,0,0,0.0
+main,siim,l,5,5,5,0,0,0,0.0
+main,siim,m,5,5,5,0,0,0,0.0
+main,siim,s,5,5,5,0,0,0,0.0

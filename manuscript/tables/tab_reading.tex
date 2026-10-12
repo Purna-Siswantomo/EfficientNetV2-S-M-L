@@ -1,0 +1,24 @@
+\begin{table*}[!htbp]
+\centering
+\caption{Automatic application of the pre-specified interpretation rules (Table~\ref{tab:rules}). ``Lower''/``higher'': 95\% CI excludes zero and Holm $p<0.05$; ``equiv.'': TOST within $\pm0.05$; otherwise ``inconcl.''. When a difference is both significant and inside the margin, the rule reports ``lower''/``higher''; Table~\ref{tab:primary} gives both properties.}
+\label{tab:reading}
+\small
+\setlength{\tabcolsep}{4pt}
+\fitwidth{\begin{tabular}{llllllll}
+\toprule
+Dataset & Contrast & Grad-CAM loc. & LRI & Grad-CAM deletion & IG loc. & DoD & Reading \\
+\midrule
+BUSI & M$-$S & equiv. & higher & equiv. & equiv. & higher & Equivalent: not more explainable, higher cost (R3) \\
+ & L$-$S & lower & higher & lower & lower & equiv. & Not conclusive \\
+ & L$-$M & lower & higher & lower & equiv. & equiv. & Not conclusive \\
+\midrule
+HAM10000 & M$-$S & higher & equiv. & higher & higher & lower & Scaling improves Grad-CAM localisation (R4) \\
+ & L$-$S & lower & equiv. & higher & higher & lower & Method-dependent (R6) \\
+ & L$-$M & lower & equiv. & lower & higher & lower & Method-dependent (R6) \\
+\midrule
+SIIM-ACR & M$-$S & lower & higher & inconcl. & lower & higher & Not conclusive \\
+ & L$-$S & lower & equiv. & higher & lower & higher & Not conclusive \\
+ & L$-$M & higher & lower & inconcl. & higher & equiv. & Scaling improves Grad-CAM localisation (R4) \\
+\bottomrule
+\end{tabular}}
+\end{table*}

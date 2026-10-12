@@ -1,0 +1,13 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[codecarbon WARNING @ 08:44:44] Multiple instances of codecarbon are allowed to run at the same time.
+[siim/s/fixed/s1/384] ep 0 loss 0.6316 val_f1 0.7277 pred_classes 2/2 bad_loss 0.00 (86s)
+[siim/s/fixed/s1/384] ep 1 loss 0.4649 val_f1 0.8309 pred_classes 2/2 bad_loss 0.00 (60s)
+[siim/s/fixed/s1/384] ep 2 loss 0.3827 val_f1 0.8243 pred_classes 2/2 bad_loss 0.00 (60s)
+[siim/s/fixed/s1/384] ep 3 loss 0.3382 val_f1 0.8361 pred_classes 2/2 bad_loss 0.00 (61s)
+[siim/s/fixed/s1/384] ep 4 loss 0.2822 val_f1 0.8171 pred_classes 2/2 bad_loss 0.00 (60s)
+[siim/s/fixed/s1/384] ep 5 loss 0.2236 val_f1 0.8478 pred_classes 2/2 bad_loss 0.00 (60s)
+[siim/s/fixed/s1/384] ep 6 loss 0.1695 val_f1 0.8570 pred_classes 2/2 bad_loss 0.00 (61s)
+[siim/s/fixed/s1/384] ep 7 loss 0.1252 val_f1 0.8571 pred_classes 2/2 bad_loss 0.00 (60s)
+[siim/s/fixed/s1/384] ep 8 loss 0.0993 val_f1 0.8582 pred_classes 2/2 bad_loss 0.00 (61s)
+[siim/s/fixed/s1/384] ep 9 loss 0.0875 val_f1 0.8611 pred_classes 2/2 bad_loss 0.00 (60s)
+{"test_macro_f1": 0.833386921782071, "test_auroc": 0.9033606805189094, "train_img_per_sec": 60.51464029670752}

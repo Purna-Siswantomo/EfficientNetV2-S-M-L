@@ -1,0 +1,24 @@
+\begin{table*}[!htbp]
+\centering
+\caption{Paired differences on lesion images classified correctly by all three variants ($n$ images). Grad-CAM \texttt{energy\_norm} is the primary endpoint (RQ3); the difference-in-differences (DoD) is the Grad-CAM difference minus the IG difference for the same image (RQ6); LRI is the explainer-free lesion reliance index (RQ5). Values are the mean paired difference with its bootstrap 95\% CI. $^{\mathrm{e}}$: equivalent within $\pm0.05$. All Grad-CAM differences except BUSI M$-$S have Holm-adjusted $p<0.001$.}
+\label{tab:primary}
+\small
+\setlength{\tabcolsep}{4pt}
+\fitwidth{\begin{tabular}{lrlllll}
+\toprule
+Dataset & $n$ & Contrast & Grad-CAM (primary) & IG & DoD (Grad-CAM $-$ IG) & LRI \\
+\midrule
+BUSI & 274 & M$-$S & +0.004 [$-$0.008, 0.015]$^{\mathrm{e}}$ & $-$0.020 [$-$0.035, $-$0.003]$^{\mathrm{e}}$ & +0.023 [0.006, 0.040]$^{\mathrm{e}}$ & +0.108 [0.069, 0.148] \\
+ &  & L$-$S & $-$0.034 [$-$0.046, $-$0.022]$^{\mathrm{e}}$ & $-$0.050 [$-$0.064, $-$0.036] & +0.016 [0.000, 0.031]$^{\mathrm{e}}$ & +0.213 [0.171, 0.255] \\
+ &  & L$-$M & $-$0.037 [$-$0.047, $-$0.027]$^{\mathrm{e}}$ & $-$0.030 [$-$0.048, $-$0.012]$^{\mathrm{e}}$ & $-$0.008 [$-$0.025, 0.012]$^{\mathrm{e}}$ & +0.106 [0.062, 0.146] \\
+\midrule
+HAM10000 & 256 & M$-$S & +0.023 [0.013, 0.034]$^{\mathrm{e}}$ & +0.052 [0.044, 0.060] & $-$0.029 [$-$0.040, $-$0.018]$^{\mathrm{e}}$ & +0.000 [$-$0.031, 0.031]$^{\mathrm{e}}$ \\
+ &  & L$-$S & $-$0.029 [$-$0.041, $-$0.017]$^{\mathrm{e}}$ & +0.108 [0.098, 0.117] & $-$0.137 [$-$0.149, $-$0.124] & $-$0.016 [$-$0.043, 0.014]$^{\mathrm{e}}$ \\
+ &  & L$-$M & $-$0.052 [$-$0.060, $-$0.044] & +0.056 [0.048, 0.065] & $-$0.108 [$-$0.119, $-$0.097] & $-$0.016 [$-$0.039, 0.008]$^{\mathrm{e}}$ \\
+\midrule
+SIIM-ACR & 262 & M$-$S & $-$0.008 [$-$0.010, $-$0.006]$^{\mathrm{e}}$ & $-$0.013 [$-$0.016, $-$0.010]$^{\mathrm{e}}$ & +0.005 [0.002, 0.008]$^{\mathrm{e}}$ & +0.030 [0.009, 0.051]$^{\mathrm{e}}$ \\
+ &  & L$-$S & $-$0.006 [$-$0.008, $-$0.004]$^{\mathrm{e}}$ & $-$0.009 [$-$0.011, $-$0.006]$^{\mathrm{e}}$ & +0.003 [0.001, 0.006]$^{\mathrm{e}}$ & +0.007 [$-$0.008, 0.024]$^{\mathrm{e}}$ \\
+ &  & L$-$M & +0.002 [0.001, 0.004]$^{\mathrm{e}}$ & +0.004 [0.002, 0.006]$^{\mathrm{e}}$ & $-$0.002 [$-$0.004, 0.000]$^{\mathrm{e}}$ & $-$0.023 [$-$0.044, $-$0.003]$^{\mathrm{e}}$ \\
+\bottomrule
+\end{tabular}}
+\end{table*}

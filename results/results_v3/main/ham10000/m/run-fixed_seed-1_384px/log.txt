@@ -1,0 +1,23 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[codecarbon WARNING @ 21:53:23] Multiple instances of codecarbon are allowed to run at the same time.
+[ham10000/m/fixed/s1/384] ep 0 loss 1.6797 val_f1 0.3756 pred_classes 6/7 bad_loss 0.00 (213s)
+[ham10000/m/fixed/s1/384] ep 1 loss 1.2163 val_f1 0.4746 pred_classes 7/7 bad_loss 0.00 (185s)
+[ham10000/m/fixed/s1/384] ep 2 loss 0.9595 val_f1 0.5713 pred_classes 7/7 bad_loss 0.00 (186s)
+[ham10000/m/fixed/s1/384] ep 3 loss 0.7042 val_f1 0.6723 pred_classes 7/7 bad_loss 0.00 (186s)
+[ham10000/m/fixed/s1/384] ep 4 loss 0.5255 val_f1 0.6650 pred_classes 7/7 bad_loss 0.00 (185s)
+[ham10000/m/fixed/s1/384] ep 5 loss 0.4024 val_f1 0.7277 pred_classes 7/7 bad_loss 0.00 (185s)
+[ham10000/m/fixed/s1/384] ep 6 loss 0.3104 val_f1 0.7391 pred_classes 7/7 bad_loss 0.00 (184s)
+[ham10000/m/fixed/s1/384] ep 7 loss 0.1911 val_f1 0.7657 pred_classes 7/7 bad_loss 0.00 (183s)
+[ham10000/m/fixed/s1/384] ep 8 loss 0.1693 val_f1 0.7447 pred_classes 7/7 bad_loss 0.00 (182s)
+[ham10000/m/fixed/s1/384] ep 9 loss 0.1538 val_f1 0.7450 pred_classes 7/7 bad_loss 0.00 (182s)
+[ham10000/m/fixed/s1/384] ep 10 loss 0.0754 val_f1 0.7374 pred_classes 7/7 bad_loss 0.00 (182s)
+[ham10000/m/fixed/s1/384] ep 11 loss 0.0911 val_f1 0.7486 pred_classes 7/7 bad_loss 0.00 (182s)
+[ham10000/m/fixed/s1/384] ep 12 loss 0.0548 val_f1 0.7828 pred_classes 7/7 bad_loss 0.00 (181s)
+[ham10000/m/fixed/s1/384] ep 13 loss 0.0499 val_f1 0.7709 pred_classes 7/7 bad_loss 0.00 (181s)
+[ham10000/m/fixed/s1/384] ep 14 loss 0.0189 val_f1 0.7720 pred_classes 7/7 bad_loss 0.00 (180s)
+[ham10000/m/fixed/s1/384] ep 15 loss 0.0304 val_f1 0.7827 pred_classes 7/7 bad_loss 0.00 (179s)
+[ham10000/m/fixed/s1/384] ep 16 loss 0.0192 val_f1 0.7697 pred_classes 7/7 bad_loss 0.00 (180s)
+[ham10000/m/fixed/s1/384] ep 17 loss 0.0111 val_f1 0.7697 pred_classes 7/7 bad_loss 0.00 (179s)
+[ham10000/m/fixed/s1/384] ep 18 loss 0.0022 val_f1 0.7817 pred_classes 7/7 bad_loss 0.00 (179s)
+[ham10000/m/fixed/s1/384] ep 19 loss 0.0025 val_f1 0.7762 pred_classes 7/7 bad_loss 0.00 (178s)
+{"test_macro_f1": 0.7206545712419492, "test_auroc": 0.9697145866584812, "train_img_per_sec": 38.85539675701136}

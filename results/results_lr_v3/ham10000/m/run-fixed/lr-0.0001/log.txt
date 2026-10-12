@@ -1,0 +1,12 @@
+[codecarbon WARNING @ 06:58:19] Multiple instances of codecarbon are allowed to run at the same time.
+[ham10000/m/fixed/s1/384] ep 0 loss 1.6652 val_f1 0.2714 pred_classes 6/7 bad_loss 0.00 (211s)
+[ham10000/m/fixed/s1/384] ep 1 loss 1.2610 val_f1 0.4684 pred_classes 7/7 bad_loss 0.00 (187s)
+[ham10000/m/fixed/s1/384] ep 2 loss 0.9652 val_f1 0.6464 pred_classes 7/7 bad_loss 0.00 (187s)
+[ham10000/m/fixed/s1/384] ep 3 loss 0.6243 val_f1 0.6862 pred_classes 7/7 bad_loss 0.00 (187s)
+[ham10000/m/fixed/s1/384] ep 4 loss 0.4623 val_f1 0.6692 pred_classes 7/7 bad_loss 0.00 (186s)
+[ham10000/m/fixed/s1/384] ep 5 loss 0.2883 val_f1 0.7708 pred_classes 7/7 bad_loss 0.00 (185s)
+[ham10000/m/fixed/s1/384] ep 6 loss 0.1441 val_f1 0.7817 pred_classes 7/7 bad_loss 0.00 (184s)
+[ham10000/m/fixed/s1/384] ep 7 loss 0.0828 val_f1 0.7907 pred_classes 7/7 bad_loss 0.00 (183s)
+[ham10000/m/fixed/s1/384] ep 8 loss 0.0541 val_f1 0.7784 pred_classes 7/7 bad_loss 0.00 (182s)
+[ham10000/m/fixed/s1/384] ep 9 loss 0.0329 val_f1 0.7951 pred_classes 7/7 bad_loss 0.00 (182s)
+{"test_macro_f1": 0.7492154938404786, "test_auroc": 0.9709233934344469, "train_img_per_sec": 38.113626091721876}

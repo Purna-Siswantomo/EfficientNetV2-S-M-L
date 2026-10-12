@@ -1,0 +1,18 @@
+\begin{table}[!htbp]
+\centering
+\caption{Chance-normalised lesion energy (\texttt{energy\_norm}) of the explanation maps and of the reference maps, averaged over all evaluated lesion images and runs. The last column gives the fraction of images on which Grad-CAM exceeds the centre-bias map (S / M / L). \texttt{oracle\_grid} is the mask itself rendered at the $12\times12$ CAM resolution; it is a resolution reference, not an upper bound for energy.}
+\label{tab:baselines}
+\small
+\setlength{\tabcolsep}{3.2pt}
+\fitwidth{\begin{tabular}{lccccccccccc}
+\toprule
+ & \multicolumn{3}{c}{Reference maps} & \multicolumn{3}{c}{Grad-CAM} & \multicolumn{3}{c}{IG} & Grad-CAM $>$ centre \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+Dataset & Random & Centre & Oracle & S & M & L & S & M & L & S / M / L \\
+\midrule
+BUSI & 0.001 & 0.098 & 0.674 & 0.167 & 0.161 & 0.133 & 0.264 & 0.244 & 0.223 & 0.74 / 0.80 / 0.69 \\
+HAM10000 & $-$0.002 & 0.314 & 0.792 & 0.398 & 0.416 & 0.360 & 0.282 & 0.328 & 0.393 & 0.75 / 0.81 / 0.68 \\
+SIIM-ACR & 0.000 & 0.002 & 0.266 & 0.026 & 0.018 & 0.019 & 0.038 & 0.027 & 0.030 & 0.68 / 0.59 / 0.64 \\
+\bottomrule
+\end{tabular}}
+\end{table}
