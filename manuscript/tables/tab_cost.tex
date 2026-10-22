@@ -1,6 +1,6 @@
 \begin{table}[!htbp]
 \centering
-\caption{Computational cost at 384\,px. The upper block is a controlled benchmark run alone on one NVIDIA T4 GPU (FP16 inference; one training step with the same batch of 8 for every variant). Training energy is the CodeCarbon estimate averaged over the five runs of each dataset; these runs shared the machine with a second run, so energy is reported as a secondary, approximate measure.}
+\caption{Computational cost at 384\,px. The upper block is a controlled benchmark run alone on one NVIDIA T4 GPU (GPU inference in FP16 and CPU inference in FP32; one training step in FP16 with the same batch of 8 for every variant). Training energy is the CodeCarbon estimate averaged over the five runs of each dataset; these runs shared the machine with a second run, so energy is reported as a secondary, approximate measure.}
 \label{tab:cost}
 \small
 \begin{tabular}{lcccc}
@@ -10,7 +10,7 @@ Measure & S & M & L & L / S \\
 Parameters (M) & 20.2 & 52.9 & 117.2 & 5.8$\times$ \\
 GMAC per image & 8.36 & 15.74 & 35.90 & 4.3$\times$ \\
 GPU latency, batch 1 (ms) & 17.2 & 24.8 & 33.6 & 2.0$\times$ \\
-GPU throughput, batch 32 (img/s) & 314 & 180 & 99 & 0.32$\times$ \\
+GPU throughput, batch 32 (img/s) & 314 & 180 & 99 & 0.31$\times$ \\
 CPU latency, batch 1 (ms) & 199 & 349 & 630 & 3.2$\times$ \\
 Training speed, batch 8 (img/s) & 75.6 & 43.4 & 22.2 & 0.29$\times$ \\
 Training memory, batch 8 (GB) & 1.91 & 3.18 & 5.63 & 2.9$\times$ \\

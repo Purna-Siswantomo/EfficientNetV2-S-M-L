@@ -1,6 +1,6 @@
 # Scaling EfficientNetV2 and explanation quality in medical imaging
 
-Code and results for the manuscript *Scaling EfficientNetV2 Does Not Yield Better Explanations in Medical Imaging: A Controlled Study Separating Model and Explainer Effects* by Purna Siswantomo, Ahmad Ilham and Wendy Sarasjati (Department of Informatics, Universitas Muhammadiyah Semarang), submitted to *AI Open*.
+Code and results for the manuscript *Disentangling model reliance and explainer sensitivity via controlled occlusion under network scale variations in medical imaging* by Purna Siswantomo, Ahmad Ilham and Wendy Sarasjati (Department of Informatics, Universitas Muhammadiyah Semarang), submitted to *AI Open*.
 
 EfficientNetV2-S, -M and -L were trained with one recipe on three medical imaging datasets with lesion masks (BUSI, HAM10000, SIIM-ACR). Their Grad-CAM, Grad-CAM++ and Integrated Gradients maps were scored against the masks, and an explainer-free lesion reliance index (LRI) was computed for every image.
 
@@ -59,7 +59,3 @@ python make_figures.py   # writes figures/*.pdf|png, figures/data/*.csv and runs
 ## Software
 
 PyTorch 2.10.0, torchvision 0.25.0, timm 1.0.26, pytorch-grad-cam 1.5.7, Captum 0.9.0, statsmodels 0.14.6 and CodeCarbon 3.3.1. The complete environment is in `results/environment.txt`.
-
-## Citation
-
-If you use this code or these results, please cite the manuscript (reference to be added after publication).

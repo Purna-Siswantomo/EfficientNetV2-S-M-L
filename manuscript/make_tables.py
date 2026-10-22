@@ -81,9 +81,11 @@ def t_cost():
             ("CPU latency, batch 1 (ms)", lambda v: f"{b.loc[v, 'cpu_latency_ms']:.0f}"),
             ("Training speed, batch 8 (img/s)", lambda v: f"{b.loc[v, 'train_img_s_b8']:.1f}"),
             ("Training memory, batch 8 (GB)", lambda v: f"{b.loc[v, 'train_mem_gb_b8']:.2f}")]
+    cols = ["params_m", "gmacs", "gpu_latency_ms", "gpu_throughput_img_s", "cpu_latency_ms", "train_img_s_b8", "train_mem_gb_b8"]
+    raw = {lab: (lambda c: lambda v: float(b.loc[v, c]))(c) for (lab, _), c in zip(spec, cols)}
     for lab, f in spec:
         vals = [f(v) for v, _ in V]
-        ratio = float(vals[2]) / float(vals[0])
+        ratio = raw[lab]("l") / raw[lab]("s")  # from unrounded values
         rs = f"{ratio:.2f}" if ratio < 1 else f"{ratio:.1f}"
         lines.append(f"{lab} & " + " & ".join(vals) + f" & {rs}$\\times$ \\\\")
     lines.append("\\midrule")
@@ -92,7 +94,7 @@ def t_cost():
         lines.append(f"Training energy per run, {dn} (kWh) & " + " & ".join(f"{x:.3f}" for x in vals) + f" & {vals[2] / vals[0]:.1f}$\\times$ \\\\")
     body = r"""\begin{table}[!htbp]
 \centering
-\caption{Computational cost at 384\,px. The upper block is a controlled benchmark run alone on one NVIDIA T4 GPU (FP16 inference; one training step with the same batch of 8 for every variant). Training energy is the CodeCarbon estimate averaged over the five runs of each dataset; these runs shared the machine with a second run, so energy is reported as a secondary, approximate measure.}
+\caption{Computational cost at 384\,px. The upper block is a controlled benchmark run alone on one NVIDIA T4 GPU (GPU inference in FP16 and CPU inference in FP32; one training step in FP16 with the same batch of 8 for every variant). Training energy is the CodeCarbon estimate averaged over the five runs of each dataset; these runs shared the machine with a second run, so energy is reported as a secondary, approximate measure.}
 \label{tab:cost}
 \small
 \begin{tabular}{lcccc}
@@ -208,6 +210,8 @@ Dataset & Images & Small & Medium & Large & Small & Medium & Large & LR $\chi^2$
 def t_secondary():
     x = rd("xai_paired_tests.csv"); x = x[(x.subset == "common_correct") & (x.A == "l") & (x.B == "s")]
     mets = [("rra", "RRA"), ("hit", "Pointing hit"), ("del_gain", "Deletion gain"), ("ins_gain", "Insertion gain")]
+    nn = lambda k: ", ".join(str(int(x[(x.dataset == d) & (x.method == "gradcam") & (x.metric == k)].n_images.iloc[0])) for d, _ in DS)
+    nid, nloc = nn("del_gain"), nn("rra")
     rows = []
     for d, dn in DS:
         for j, (m, mn) in enumerate([("gradcam", "Grad-CAM"), ("ig", "IG")]):
@@ -217,7 +221,7 @@ def t_secondary():
             rows.append("\\midrule")
     body = r"""\begin{table*}[!htbp]
 \centering
-\caption{Secondary localisation and faithfulness metrics, L $-$ S on the common-correct lesion images (mean paired difference [95\% CI]). RRA: relevance rank accuracy \citep{arras2022clevr}. Deletion and insertion gains are measured against a random pixel order on the same image and model, so positive values mean the map is more faithful than chance. $^{\mathrm{e}}$: equivalent within $\pm0.05$.}
+\caption{Secondary localisation and faithfulness metrics, L $-$ S on the common-correct lesion images (mean paired difference [95\% CI]). RRA: relevance rank accuracy \citep{arras2022clevr}. Deletion and insertion gains are measured against a random pixel order on the same image and model, so positive values mean the map is more faithful than chance. Deletion and insertion were computed on the first 100 explained images of each run, so these columns use """ + nid + r""" images and the other columns use """ + nloc + r""" (BUSI, HAM10000, SIIM-ACR). $^{\mathrm{e}}$: equivalent within $\pm0.05$.}
 \label{tab:secondary}
 \small
 \setlength{\tabcolsep}{4pt}
