@@ -13,6 +13,8 @@ EfficientNetV2-S, -M and -L were trained with one recipe on three medical imagin
 | `results/data_utils.py` | dataset indexing, masks and splits |
 | `results/xai_utils.py` | Grad-CAM, Grad-CAM++, IG, localisation metrics, LRI, faithfulness, sanity checks, ERF |
 | `results/analysis.py` | merged analysis: bootstrap, Wilcoxon, Holm, TOST, mixed model, interpretation rules |
+| `results/lri_overlap_sensitivity.py` | post-hoc (not pre-specified) sensitivity of the HAM10000 LRI contrasts to control-region overlap; run `cd results && python lri_overlap_sensitivity.py` (seed 0, 2,000 bootstrap resamples) to write `summary/lri_overlap_sensitivity.csv` |
+| `data_splits/` | image-level index and train/validation/test assignment of every run (see `data_splits/README.md`) |
 | `results/bench.py` | efficiency benchmark (parameters, GMAC, latency, throughput, memory) |
 | `results/best_lr.json` | learning rate selected per dataset, variant (and BUSI fold) |
 | `results/efficiency_benchmark.json`, `results/environment.txt` | raw benchmark output and the full `pip freeze` of the Kaggle environment |
